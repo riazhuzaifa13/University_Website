@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(3,3,3,0.7),rgba(3,3,3,0.7)),url(images/main.jfif);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+.logo{
+    width: 30%;
+}
+.nav-links{
+   flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    padding: 12px 25px;
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-links ul li::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    margin: auto;
+    background:  rgb(139, 12, 12);
+    display: block;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+    
+}
+
+.textbox{
+    text-align: center;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.textbox h1, .textbox h2{
+    font-size: 70px;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.textbox h2{
+    font-size: 50px;
+}
+.textbox p{
+    color: white;
+    margin: 10px 0  30px 0;
+    font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.loginbutton{
+    border: 2px solid white;
+    padding: 10px;
+    background-color: transparent;
+    position: relative;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    transition: 1s ease;
+    font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.loginbutton:hover{
+    border: 2px solid rgb(139, 12, 12);
+    background-color:  rgb(139, 12, 12);
+   
+}
+nav .fa{
+    color: white;
+    font-size: 26px;
+    display: none;
+}
+.fa-times{
+    margin: 10px;
+    text-align: left;
+}
+@media(max-width:700px){
+    .textbox h1{
+        font-size: 30px;
+    }
+    .nav-links ul li{
+        display: block;
+        margin: 40px;
+        text-align: center;
+    }
+    .nav-links{
+        position: fixed;
+        background-color: rgb(139, 12, 12);
+       
+        height: 100vh;
+        width: 100%;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        cursor: pointer;
+    }
+    
+.course .row .col-md{
+   width: 90%;
+}
+.hover{
+    padding: 15px;
+}
+  
+}
+.courseh3{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;}
+.course{
+    text-align: center;
+    margin-top: 100px;
+}
+.course h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.course .row .col-md{
+    border: 2px solid rgb(226, 225, 225);
+    background-color: rgb(250, 240, 240);
+    border-radius: 10px;
+    margin: 60px 20px;
+    padding: 10px;
+}
+.course .row .col-md:hover{
+    box-shadow: 1px 1px 30px 2px rgb(204, 202, 202);
+}
+
+.course .row .col-md h3{
+    margin: 20px 0;
+}
+
+.program, .facilities{
+    text-align: center;
+    margin: 100px 0;
+}
+
+.program h1, .facilities h1, .about h1 , .testimonials h1, .footer h3{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.program .row{
+    margin-top: 60px;
+}
+
+.hover{
+    position: relative;
+    width: 50%;
+    border-radius: 20px;
+
+}
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 2px solid rgb(226, 226, 226);
+border-radius: 20px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: rgb(139, 12, 12);
+    border-radius: 20px;
+
+  }
+  
+  .hover:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .faculP{
+    margin-bottom: 60px;
+  }
+ .cardH{
+    margin-top: 10px;
+}
+.testimonials h1{
+    text-align: center;
+}
+
+.testPic{
+    width: 20%;
+    border-radius: 100%;
+}
+
+.testcard{
+    padding: 20px;
+}
+
+
+.testcard {
+    border: 2px solid rgb(226, 225, 225);
+    background-color: rgb(250, 240, 240);    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0
+  }
+  
+  .testcard::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .testcard img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  .testcard span {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  
+  @media (max-width: 500px) {
+    .testcard {
+        text-align: center;
+    }
+    .testcard img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+  }
+ .testcard .fa-star,.testcard .fa-star-half{
+    color: rgb(182, 182, 1);
+  }
+
+  .about{
+    background: linear-gradient(rgba(3,3,3,0.7),rgba(3,3,3,0.7)),url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 100px;
+    padding-top: 80px;
+
+  }
+  .contactP{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .contactbtn{
+    color: rgb(190, 186, 186);
+    border: 2px solid rgb(190, 186, 186);
+    background-color:transparent ;
+    text-decoration: none;
+    padding: 10px 15px;
+    position: relative;
+    left: 45%;
+    top: 10%;
+    transition: 1s ease;
+  }
+  .contactbtn:hover{
+    border: 2px solid rgb(139, 12, 12) ;
+    background-color:rgb(139, 12, 12) ;
+  }
+
+  @media (max-width:700px) {
+    .contactP{
+        font-size: 20px;
+    }
+    .contactbtn{
+        left: 35%;
+    }
+  }
+
+  .footer{
+    text-align: center;
+    margin-top: 100px;
+  }
+  .footer p{
+    font-size: 15px;
+    margin-top: 40px;
+  }
+  .icons .fa{
+    margin: 0 13px;
+    color:rgb(139, 12, 12) ;
+    cursor: pointer;
+
+  }
+
+  .aboutheader{
+    width: 100%;
+    min-height: 50vh;
+    background: linear-gradient(rgba(3,3,3,0.7),rgba(3,3,3,0.7)),url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.aboutuss{
+    margin-top: 100px;
+}
+.aboutuss h2 , .hi, .comment h3{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.hi{
+    margin-top: 10px;
+}
+.explore{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid rgb(139, 12, 12);
+    color: rgb(139, 12, 12);
+    transition: 1s ease;
+    text-decoration: none;
+    margin: 40px 0;
+}
+.explore:hover{
+    background-color: rgb(139, 12, 12);
+    color: white;
+}
+
+.aboutpic{
+    width: 100%;
+}
+.aboutuss p{
+    margin: 30px 0 45px 0;
+}
+
+.onlinepic{
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+}
+
+.comment{
+    border: 2px solid grey;
+    padding: 10px;
+}
+
+.comment input, .comment textarea{
+    width: 100%;
+    padding: 5px;
+    margin: 15px 0;
+    background-color: rgb(230, 230, 230);
+    border: none;
+}
+
+.commentbtn{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid rgb(139, 12, 12);
+    color: rgb(139, 12, 12);
+    transition: 1s ease;
+    text-decoration: none;
+    margin: 10px;
+}
+.commentbtn:hover{
+    background-color: rgb(139, 12, 12);
+    color: white;
+}
+
+.categorybtn{
+    margin-top: 80px;
+    background-color: rgb(139, 12, 12);
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    border: none;
+}
+
+.location{
+    margin-top: 80px;
+}
+
+.location iframe{
+    width: 100%;
+    height: 100vh;
+}
+
+.homenumber{
+    padding: 20px;
+}
+
+
+.homenumber {
+    border: none;
+    background-color:transparent;
+    padding: 16px;
+    margin: 16px 0
+  }
+  
+  .homenumber::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .homenumber i {
+    float: left;
+    margin-right: 20px;
+    font-size: 30px;
+    color:rgb(139, 12, 12) ;
+  }
+  
+  .homenumber span {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  
+  @media (max-width: 500px) {
+    .homenumber {
+        text-align: center;
+    }
+    .homenumber i {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+  }
+ .homenumber .fa-star,.homenumber .fa-star-half{
+    color: rgb(182, 182, 1);
+  }
